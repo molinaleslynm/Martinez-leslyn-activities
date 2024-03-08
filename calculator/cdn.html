@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('NIKOLAOS.jpg'); /* Replace 'background-image.jpg' with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            background-color: rgba(170, 169, 169, 0.5); /* Adjust the opacity here (0.5 for 50% transparent) */
+            padding: 60px;
+            width: 30%;
+            height: 55%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+
+        h2 {
+            color: #0a0707;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100px;
+            border: 1px solid #0e0707;
+            border-radius: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #858688;
+            color: #fae6e6;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #633277;
+        }
+
+        p {
+            color: #0c0404;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SUM CALCULATOR</h2>
+        <p>First Number</p>
+        <input type="text" id="firstnum">
+        <p>Second Number</p>
+        <input type="text" id="secondnum">
+        <br>
+        <button type="button" onclick="sum()">Compute</button>
+        <br>
+        <p id="sum">Sum</p>
+        <p id="difference">Difference</p>
+        <p id="Quotient">Quotient</p>
+        <p id="product">Product</p>
+    </div>
+
+    <script>
+        function sum() {
+            var firstnum = Number(document.getElementById('firstnum').value);
+            var secondnum = Number(document.getElementById('secondnum').value);
+
+            document.getElementById('sum').innerHTML = "Sum: " + (firstnum + secondnum);
+            document.getElementById('difference').innerHTML = "Difference: " + (firstnum - secondnum);
+            document.getElementById('Quotient').innerHTML = "Quotient: " + (firstnum * secondnum);
+            document.getElementById('product').innerHTML = "Product: " + (firstnum / secondnum);
+        }
+    </script>
+</body>
+</html>

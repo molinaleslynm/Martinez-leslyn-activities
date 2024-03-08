@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function hello() {
+            document.getElementById('sample').innerHTML = "This is my first web page with JS";
+            document.getElementById('sample').style.backgroundColor = "rgb(77, 19, 88)";
+            document.getElementById('sample').style.color = "yellow";
+
+            document.getElementById('sample2').innerHTML = "by:Leslyn Molina";
+            document.getElementById('sample2').style.backgroundColor = "rgb(77, 19, 88)";
+            document.getElementById('sample2').style.color = "yellow";
+
+            document.getElementById('sample3').innerHTML = "Advanced JS and JSFramework ";
+            document.getElementById('sample3').style.backgroundColor = "rgb(77, 19, 88)";
+            document.getElementById('sample3').style.color = "yellow";
+
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Set the background color for the whole page */
+            padding: 20px; /* Add some padding for better visual */
+        }
+
+        h2, h3 {
+            background-color: rgb(77, 19, 88); /* Background color for heading elements */
+            color: yellow; /* Text color for heading elements */
+            padding: 10px; /* Add some padding for better visual */
+        }
+
+        p {
+            background-color: rgba(119, 91, 124, 0.5); /* Semi-transparent background color for paragraphs */
+            color: rgb(15, 15, 9); /* Text color for paragraphs */
+            padding: 10px; /* Add some padding for better visual */
+        }
+
+        button {
+            background-color: rgb(192, 172, 196); /* Background color for buttons */
+            color: rgb(19, 19, 3); /* Text color for buttons */
+            padding: 10px; /* Add some padding for better visual */
+            border: none; /* Remove border from buttons */
+            cursor: pointer; /* Add pointer cursor on hover */
+        }
+
+        h3 {
+            background-color: rgb(77, 19, 88); /* Background color for "Goodbye" button */
+            color: yellow; /* Text color for "Goodbye" button */
+            padding: 10px; /* Add some padding for better visual */
+        }
+    </style>
+</head>
+<body>
+    <h2>Before Clicking</h2>
+    <button type="button" onclick="hello()">Click me</button>
+    <p id="sample4"></p>
+
+    <h2>After Clicking</h2>
+    <button type="button" onclick="hello()">Click me</button>
+    <p id="sample"></p>
+
+    <p id="sample2"></p>
+    <p id="sample3"></p>
+
+    
+</body>
+</html>

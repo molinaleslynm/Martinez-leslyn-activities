@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function sum() {
+          var firstnum = Number (document.getElementById('firstnum').value);
+         var secondnum =  Number(document.getElementById('secondnum').value);
+
+         document.getElementById('sum').innerHTML = firstnum + secondnum;
+         document.getElementById('difference').innerHTML = firstnum - secondnum;
+         document.getElementById('Quotient').innerHTML = firstnum * secondnum;
+         document.getElementById('product').innerHTML = firstnum / secondnum;
+        }
+        function difference() {
+          var firstnum = Number (document.getElementById('firstnum').value);
+         var secondnum =  Number(document.getElementById('secondnum').value);
+
+         document.getElementById('sum').innerHTML = firstnum + secondnum;
+         document.getElementById('difference').innerHTML = firstnum - secondnum;
+         document.getElementById('Quotient').innerHTML = firstnum * secondnum;
+         document.getElementById('product').innerHTML = firstnum / secondnum;
+        }
+        function Quotient() {
+          var firstnum = Number (document.getElementById('firstnum').value);
+         var secondnum =  Number(document.getElementById('secondnum').value);
+
+         document.getElementById('sum').innerHTML = firstnum + secondnum;
+         document.getElementById('difference').innerHTML = firstnum - secondnum;
+         document.getElementById('Quotient').innerHTML = firstnum * secondnum;
+         document.getElementById('product').innerHTML = firstnum / secondnum;
+        }
+        function product() {
+          var firstnum = Number (document.getElementById('firstnum').value);
+         var secondnum =  Number(document.getElementById('secondnum').value);
+
+         document.getElementById('sum').innerHTML = firstnum + secondnum;
+         document.getElementById('difference').innerHTML = firstnum - secondnum;
+         document.getElementById('Quotient').innerHTML = firstnum * secondnum;
+         document.getElementById('product').innerHTML = firstnum / secondnum;
+        }
+        </script>
+    </head>
+    <body>
+        <h2>SUM CALCULATOR</h2>
+        <p>First Number</p>
+        <input type="text" id="firstnum">
+        <p>Second Number</p>
+        <input type="text" id="secondnum">
+        <br/>
+        <br/>
+        <button type="button" onclick="sum()">Compute </button>
+        <p id="sum">Sum</p>
+        <p id="difference">Difference</p>
+        <p id="Quotient">Quotient</p>
+        <p id="product">Product</p>
+    </body>
+</html>
